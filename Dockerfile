@@ -23,10 +23,10 @@ ENV LD_LIBRARY_PATH=/usr/local/lib
 ENV PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 
 RUN mkdir /data
-ADD installers/cmusphinx-code.tar.gz /data
-ADD installers/pocketsphinx-5prealpha.tar.gz /data
+ADD installer/cmusphinx-code.tar.gz /data
+ADD installer/pocketsphinx-5prealpha.tar.gz /data
 ADD installer/sphinxbase-5prealpha.tar.gz /data
-ADD installers/sphinxtrain-5prealpha.tar.gz /data
+ADD installer/sphinxtrain-5prealpha.tar.gz /data
 
 RUN cd /data/
 RUN tar -xzvf cmusphinx-code.tar.gz
